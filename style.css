@@ -1,0 +1,248 @@
+
+:root {
+    --cor-de-fundo:#eee7d3 ;
+    --cor-de-fundo-menu:#eb7867 ;
+    --cor-do-link: #7f4529;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: row; /* Itens na mesma linha */
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    max-width: 100vw;
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */;
+}
+
+.cabecalho__titulo {
+    white-space: nowrap; /* Garante que o texto não quebre */
+    font-size: 1.2rem;
+    text-align: left;
+    color: #ffdfbf;
+    margin-left: 1rem; /* Adiciona espaço entre o logo e o título */
+}
+
+.navegacao{
+    width: 100%;
+}
+
+.navegacao__lista {
+   display: flex;
+   gap: 32px;
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+}
+.apresentacao__conteiner{
+    margin-right: 15rem;
+    margin-top: 3rem;
+}
+
+.apresentacao__foto{
+    width: 320px;
+    margin-left: 4.4rem;
+    margin-top: 3rem;
+}
+
+.apresentacao__titulo{
+    color: #7f4529;
+    margin-left: 3rem;
+}
+
+.apresentacao__subtitulo{
+    color:#7f4529;
+    margin-left: 3rem;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 0.5rem;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim{
+    margin-left: 27.3rem;
+    margin-right: 18rem;
+}
+
+.sobre-mim__titulo{
+    color: #7f4529;
+}
+
+.sobre-mim__texto{
+    color: #7f4529;
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades {
+   margin-top: 5rem;   
+}
+
+.habilidades__titulo {
+    color: #7f4529;
+    margin-left: 700px;
+}
+
+.habilidades__lista {
+    color: #7f4529;
+    display: flex;
+    flex-direction: row;
+    gap: 270px; /* Ajustei o gap para um valor menor, mais uniforme */
+    justify-content: center; /* Centraliza os elementos */
+    margin-top: 40px;
+}
+
+.habilidades__elemento {
+    background-color: #F5F5F5;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+}
+
+
+
+.habilidades__nome {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center; /* Centraliza o texto */
+}
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies{
+    margin-left: 27.3rem;
+    margin-top: 5rem;
+    margin-right: 18rem;
+}
+.hobbies__titulo{
+    color: #7f4529;
+}
+
+.hobbies__lista{
+    color: #7f4529;
+    display: flex;
+    flex-direction: row;
+    gap: 290px;
+    margin-top: 40px;
+}
+
+/*------------------------------ Seção de Formação Acadêmica --------------------------------*/
+
+.formacao{
+    margin-left: 27.3rem;
+    margin-top: 5rem;
+    margin-right: 18rem;
+}
+.formacao__titulo{
+    color: #7f4529;
+}
+
+.formacao__lista{
+    color: #7f4529;
+}
+
+/*------------------------------ Seção de Projetos ---------------------------------*/
+
+.projetos{
+    margin-left: 27.3rem;
+    margin-top: 5rem;
+    margin-right: 18rem;
+}
+
+.projetos__titulo{
+    color: #7f4529;
+}
+
+.projetos__conteiner{
+    color: #7f4529;
+}
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+
+.contato{
+    margin-left: 27.3rem;
+    margin-top: 5rem;
+    margin-right: 18rem;
+    color: #7f4529;
+}
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction:row;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 0.9rem;
+        margin-top: 0;
+        margin-left: 40rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+
+    
+}
+
+
+@media (min-width: 1024px) {
+   
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
