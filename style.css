@@ -90,8 +90,11 @@ a {
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 
 .sobre-mim{
-    margin-left: 27.3rem;
-    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25% 3%;
+    background-color: #eeddc5;
 }
 
 .sobre-mim__titulo{
@@ -105,19 +108,22 @@ a {
 /*------------------------------ Seção de Habilidades ------------------------------*/
 
 .habilidades {
-   margin-top: 5rem;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 25% 3%;
+    background-color: #eee7d3;  
 }
 
 .habilidades__titulo {
     color: #7f4529;
-    margin-left: 700px;
 }
 
 .habilidades__lista {
     color: #7f4529;
     display: flex;
     flex-direction: row;
-    gap: 270px; /* Ajustei o gap para um valor menor, mais uniforme */
+    gap: 180px; 
     justify-content: center; /* Centraliza os elementos */
     margin-top: 40px;
 }
@@ -135,18 +141,20 @@ a {
 }
 
 
-
 .habilidades__nome {
     margin-top: 10px;
     font-size: 16px;
     text-align: center; /* Centraliza o texto */
+    margin-bottom: 2px;
 }
 /*------------------------------ Seção de Hobbies --------------------------------*/
 
 .hobbies{
-    margin-left: 27.3rem;
-    margin-top: 5rem;
-    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 25% 3%;
+    background-color: #eeddc5;
 }
 .hobbies__titulo{
     color: #7f4529;
@@ -156,16 +164,35 @@ a {
     color: #7f4529;
     display: flex;
     flex-direction: row;
-    gap: 290px;
-    margin-top: 40px;
+    gap: 100px; 
+    justify-content: center; /* Centraliza os elementos */
+}
+
+.hobbies__elemento{
+    background-color: #F5F5F5;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+}
+
+.hobbies__nome{
+    font-size: 16px;
+    text-align: center; /* Centraliza o texto */
 }
 
 /*------------------------------ Seção de Formação Acadêmica --------------------------------*/
 
 .formacao{
-    margin-left: 27.3rem;
-    margin-top: 5rem;
-    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 25% 3%;
+    background-color: #eee7d3;  
 }
 .formacao__titulo{
     color: #7f4529;
@@ -173,14 +200,31 @@ a {
 
 .formacao__lista{
     color: #7f4529;
+    display: flex;
+    flex-direction: row;
+    gap: 100px; 
+    justify-content: center; /* Centraliza os elementos */
 }
 
+.formacao__icone{
+    background-color: #F5F5F5;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+}
 /*------------------------------ Seção de Projetos ---------------------------------*/
 
 .projetos{
-    margin-left: 27.3rem;
-    margin-top: 5rem;
-    margin-right: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25% 0;
+    background-color: #eeddc5;
 }
 
 .projetos__titulo{
