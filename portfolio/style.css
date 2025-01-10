@@ -42,18 +42,22 @@ a {
     font-size: 1.2rem;
     text-align: left;
     color: #ffdfbf;
-    margin-left: 1rem; /* Adiciona espaço entre o logo e o título */
+    padding-left: 1rem; /* Adiciona espaço entre o logo e o título */
 }
 
 .navegacao{
     width: 100%;
+    margin: 0;
 }
 
 .navegacao__lista {
+   white-space: nowrap;
    display: flex;
-   gap: 32px;
+   flex-direction: row;
+   gap: 35px;
+   padding-right: 6000px;
+   margin: 0;
 }
-
 /* ------------------------------ Seção Apresentação ------------------------------*/
 .apresentacao{
     display: flex;
@@ -247,16 +251,14 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
 
 }
 
-.projetos__elemento1{
-    width: 100px;
+.projetos__icone{
+    width: 40rem;
 }
 
-.projetos__elemento2{
-    width: 1px;
-}
 /*------------------------------ Seção de Contato ---------------------------------*/
 
 .contato{
@@ -311,15 +313,15 @@ a {
 
     .cabecalho__titulo {
         font-size: 1.5rem;
-        margin-left: 3rem;
+        padding-left: 3rem;
     }
 
     .navegacao__lista {
         display: flex;
         flex-direction: row;
         gap: 0.9rem;
-        margin-top: 0;
-        margin-left: 40rem;
+        padding-top: 0;
+        padding-left: 40rem;
     }
 
     .navegacao__elemento a {
