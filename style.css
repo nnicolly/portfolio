@@ -55,7 +55,6 @@ a {
    display: flex;
    flex-direction: row;
    gap: 35px;
-   padding-right: 6000px;
    margin: 0;
 }
 
@@ -276,7 +275,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1% 25% 3%;
+    padding: 3% 25% 3%;
     color: #7f4529;
 }
 
