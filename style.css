@@ -42,51 +42,65 @@ a {
     font-size: 1.2rem;
     text-align: left;
     color: #ffdfbf;
-    margin-left: 1rem; /* Adiciona espaço entre o logo e o título */
+    padding-left: 1rem; /* Adiciona espaço entre o logo e o título */
 }
 
 .navegacao{
     width: 100%;
+    margin: 0;
 }
 
 .navegacao__lista {
+   white-space: nowrap;
    display: flex;
-   gap: 32px;
+   flex-direction: row;
+   gap: 35px;
+   padding-right: 6000px;
+   margin: 0;
 }
 
+.navegacao__elemento a:hover{
+    color: #eee7d3; 
+    transform: scale(1.2);
+    transition: 0.3s;
+}
 /* ------------------------------ Seção Apresentação ------------------------------*/
 .apresentacao{
     display: flex;
     flex-direction: row;
-}
-.apresentacao__conteiner{
-    margin-right: 15rem;
-    margin-top: 3rem;
+    padding: 2% 5% 3%;
 }
 
+.apresentacao__conteiner{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+}
 .apresentacao__foto{
     width: 320px;
-    margin-left: 4.4rem;
-    margin-top: 3rem;
+    padding-right: 5%;
 }
 
 .apresentacao__titulo{
     color: #7f4529;
-    margin-left: 3rem;
 }
 
 .apresentacao__subtitulo{
     color:#7f4529;
-    margin-left: 3rem;
 }
 
 .redes{
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    margin-left: 0.5rem;
+    gap: 100px;
+    padding-left: 0;
 }
 
+.redes__elemento a:hover{
+    color: #e67361;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
 /* ------------------------------ Seção Sobre mim ----------------------------------*/
 
 .sobre-mim{
@@ -111,8 +125,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1% 25% 3%;
-    background-color: #eee7d3;  
+    padding: 1% 25% 3%; 
 }
 
 .habilidades__titulo {
@@ -191,8 +204,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1% 25% 3%;
-    background-color: #eee7d3;  
+    padding: 1% 25% 3%;  
 }
 .formacao__titulo{
     color: #7f4529;
@@ -201,29 +213,40 @@ a {
 .formacao__lista{
     color: #7f4529;
     display: flex;
-    flex-direction: row;
-    gap: 100px; 
+    flex-direction: column;
     justify-content: center; /* Centraliza os elementos */
 }
 
-.formacao__icone{
+.formacao__elemento{
     background-color: #F5F5F5;
-    width: 150px;
-    height: 100px;
+    width: 300px; 
+    height: 200px; 
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* sombra */
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
+.formacao__icone{
+    max-width: 70%;
+}
+
+.formacao__nome{
+    font-size:large;
+}
+
+.formacao__detalhe{
+    font-size: 95%;
+    margin-top: -20px;
+}
+
 /*------------------------------ Seção de Projetos ---------------------------------*/
 
 .projetos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 25% 0;
+    padding: 0 25% 3%;
     background-color: #eeddc5;
 }
 
@@ -235,14 +258,79 @@ a {
     color: #7f4529;
 }
 
+.projetos__lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.projetos__icone{
+    width: 40rem;
+}
 
 /*------------------------------ Seção de Contato ---------------------------------*/
 
 .contato{
-    margin-left: 27.3rem;
-    margin-top: 5rem;
-    margin-right: 18rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1% 25% 3%;
     color: #7f4529;
+}
+
+.contato__conteiner{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5% 7%;
+}
+
+.contato__foto{
+    width: 300px;
+    border-radius: 5%;
+}
+
+.contato__formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato__campo{
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    border-color: #eee7d3;
+}
+
+.contato__campo--textarea{
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    border-color: #eee7d3;
+}
+
+/* ------------------------------ Seção Rodapé -------------------------------*/
+
+footer{
+    width: 100%;
+    color: #f1dfc2;
+}
+
+#footer_content {
+    color: var(--cor-do-link);
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#footer_content h1 {
+    font-size: 1.5rem;
+    margin-bottom:0;
+}
+
+#footer_content p{
+    font-size: 13px ;
+    margin-top: 0.5rem;
 }
 
 /* ------------------------------ Responsividade ---------------------------------------*/
@@ -261,15 +349,15 @@ a {
 
     .cabecalho__titulo {
         font-size: 1.5rem;
-        margin-left: 3rem;
+        padding-left: 3rem;
     }
 
     .navegacao__lista {
         display: flex;
         flex-direction: row;
         gap: 0.9rem;
-        margin-top: 0;
-        margin-left: 40rem;
+        padding-top: 0;
+        padding-left: 40rem;
     }
 
     .navegacao__elemento a {
